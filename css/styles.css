@@ -1,0 +1,239 @@
+/*
+blue #2196F3 
+primary-background #FFFFFF
+primary-text #212121
+secondary-text #757575
+footer-background #2F303A
+adress-color #FFFFFF 60 %
+secondary-background #F5F4FA
+*/
+
+:root {
+  --accent: #2196f3;
+  --primary-background-color: #ffffff;
+  --primary-text-color: #212121;
+  --second-primary-text-color: #ffffff;
+  --secondary-text-color: #757575;
+  --footer-background-color: #2f303a;
+  --address-color: rgba(255, 255, 255, 60%);
+  --secondary-background-color: #f5f4fa;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/*удалена маркеровка в списках*/
+.list {
+  list-style: none;
+}
+a,
+button {
+  outline: none;
+}
+
+/*Логотип*/
+.logo {
+  color: var(--accent);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.studio {
+  color: var(--primary-text-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.bottem-studio {
+  color: var(--second-primary-text-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+/*удален наклон шрифта для ссылок*/
+.link {
+  text-decoration: none;
+}
+
+/*navigation*/
+.site-nav .link {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus,
+.list-contacts .link:hover,
+.list-contacts .link:focus {
+  color: var(--accent);
+}
+
+.current.link {
+  color: var(--accent);
+}
+
+/*contacts*/
+.contacts .link {
+  color: var(--secondary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/*top section and footer*/
+.head,
+.bottem {
+  background-color: var(--footer-background-color);
+}
+
+.head-title {
+  color: var(--second-primary-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.head-button {
+  background-color: var(--accent);
+  color: var(--second-primary-text-color);
+
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  border-style: none;
+}
+
+.head-button:hover,
+.head-button:focus {
+  background-color: #188ce8;
+}
+/*main contant*/
+
+.features-title,
+.work-title,
+.team-title,
+.team-title-name {
+  color: var(--primary-text-color);
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-title-text {
+  color: var(--secondary-text-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.work-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+}
+
+.team-title-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-title-profession {
+  color: var(--secondary-text-color);
+
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+/*footer*/
+
+.list-title {
+  color: var(--second-primary-text-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.list-contacts .link {
+  color: rgba(255, 255, 255, 60%);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/*Portfolio buttons*/
+
+.buttons {
+  background-color: var(--secondary-background-color);
+
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  border-radius: 4px;
+  border-style: none;
+}
+
+.buttons:hover,
+.buttons:focus {
+  background-color: var(--accent);
+  color: var(--second-primary-text-color);
+}
+
+.list-projects {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.list-items {
+  color: var(--secondary-text-color);
+
+  font-size: 16px;
+  line-height: 1.88;
+}
