@@ -46,7 +46,7 @@ button {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -62,7 +62,8 @@ img {
 }
 
 /*Логотип*/
-.logo {
+.main-nav .link,
+.bottom-link {
   color: var(--accent);
 
   font-family: Raleway;
@@ -92,13 +93,22 @@ img {
 /*navigation*/
 
 .top {
-  border-bottom: 1px solid #ececec;
+  outline: 1px solid #ececec;
 }
 
 .main-nav {
   display: flex;
+}
+
+.main-nav .link {
   padding-top: 24px;
   padding-bottom: 25px;
+}
+
+.site-nav .item,
+.contacts .item {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav {
@@ -276,7 +286,7 @@ img {
 
 /*Чем мы занимаемся*/
 
-.work.section. {
+.work.section {
   padding-top: 0;
 }
 
@@ -346,8 +356,15 @@ img {
   margin-bottom: 0;
 }
 
+.item .item-bottom {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
 .team-title-name {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
 
@@ -357,7 +374,7 @@ img {
 
 .team-title-profession {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 
   color: var(--secondary-text-color);
 
@@ -454,6 +471,8 @@ img {
 .item-line {
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
@@ -468,7 +487,7 @@ img {
 
 .list-projects {
   width: 322px;
-  margin: 0 24px 4px 24px;
+  margin-bottom: 4px;
   font-weight: 500;
   font-size: 18px;
   line-height: 2;
@@ -477,7 +496,8 @@ img {
 
 .list-items {
   width: 322px;
-  margin: 0 24px 0 24px;
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--secondary-text-color);
 
   font-size: 16px;
